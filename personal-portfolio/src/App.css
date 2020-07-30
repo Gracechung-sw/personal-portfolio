@@ -13,12 +13,13 @@ a {
 }
 
 /*App style*/
-.contents {
+.contents,
+.about_compo {
   padding: 7%;
 }
+
 /*About component style*/
 .about-Compo {
-  padding: 7%;
   display: flex;
 }
 .profile-name {
@@ -60,6 +61,16 @@ li {
   position: fixed;
   top: 20px;
   left: 20px;
+}
+/*Project component style*/
+.project_compo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.project-image {
+  width: 350px;
+  height: 360px;
 }
 
 /* Linkbar component style */

@@ -22,10 +22,17 @@ class App extends React.Component {
           </div>
         </div>
 
-        <body>body</body>
-        <button>
-          <Footer>Github, Blog, Gmail</Footer>
-        </button>
+        <body>
+          <div className="contents">
+            {/* <About></About>
+            <Blog></Blog>
+            <Project></Project> */}
+          </div>
+        </body>
+
+        <buttom>
+          <Footer></Footer>
+        </buttom>
       </div>
     )
   }

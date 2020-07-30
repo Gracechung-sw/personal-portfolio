@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+:root {
+  --text--color--black: #212121;
+  --text--color--white: #ffffff;
+}
+/* 내가 다 customizing 하기 위해 CSS기본으로 들어가있는 style을 다 제거해주기 .body, */
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*App style*/
+.contents {
+  padding: 7%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*About component style*/
+.about-Compo {
+  padding: 7%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.profile-name {
+  font-size: 30px;
+}
+
+/* Nav component style */
+
+.brainSlide {
+  background-image: url(https://a360-op.s3.amazonaws.com/wp-content/uploads/2019/11/MRI-Study-1280x640.jpg);
+  /* 이미지의 비율이 유지되었으면 좋겠을 때 아래처럼 비율로 해당 페이지에서 항상 이 이미지의 크기(비율)가 유지될 수 있도록 */
+  background-size: cover;
+  background-position: center;
+  padding-top: 56.25%;
+}
+.programmingSlide {
+  background-image: url(https://www.jayacompany.com/wp-content/uploads/2019/11/woman-programming.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 56.25%;
+}
+.dataSlide {
+  background-image: url(https://cdn-images-1.medium.com/max/2600/1*JGsnzMjAjs0E7uVyKcOFNA.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 56.25%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.navbar {
+}
+
+.navtitle {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+/* Linkbar component style */
+
+.linkbar_menu {
+  display: flex;
+  background-color: #002171;
+  list-style: none;
+}
+
+.menu {
+  padding: 25px;
+  text-decoration: none;
+  color: var(--text--color--white);
+}
+
+/*Footbar component style*/
+.footbar_logo {
+  list-style: none;
   color: white;
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footbar_logo i {
+  padding: 25px;
 }

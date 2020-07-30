@@ -12,19 +12,29 @@ const Linkbar = () => (
       <BrowserRouter>
         <ul className="linkbar_menu">
           <li>
-            <Link to="/">Home</Link>
+            <Link className="menu" to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/About">About</Link>
+            <Link className="menu" to="/About">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/Project">Project</Link>
+            <Link className="menu" to="/Project">
+              Project
+            </Link>
           </li>
           <li>
-            <Link to="/Blog">Blog</Link>
+            <Link className="menu" to="/Blog">
+              Blog
+            </Link>
           </li>
           <li>
-            <Link to="/Contact">Contact</Link>
+            <Link className="menu" to="/Contact">
+              Contact
+            </Link>
           </li>
         </ul>
         {/* 위에서 Link까지 하면 주소창에 해당 요청이 보내진다. (그리고 그게 url로 보인다.)

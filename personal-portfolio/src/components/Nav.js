@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Linkbar from './Linkbar'
 import { Carousel } from 'react-responsive-carousel'
+// import {projectData} from '../projectData'
 
 class Nav extends Component {
   render() {

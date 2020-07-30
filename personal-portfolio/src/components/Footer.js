@@ -2,6 +2,7 @@ import React from 'react'
 
 const Footer = () => (
   <div className="footbar_logo">
+    {console.log('footer')}
     {/* github icon */}
     <a href="https://github.com/Gracechung-sw">
       <i class="fab fa-github-square"></i>

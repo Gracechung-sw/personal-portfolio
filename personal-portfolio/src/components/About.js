@@ -5,7 +5,7 @@ const About = () => (
   <div className="about_compo">
     {/* <img className="profile-image" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FclfoiG%2FbtqGbpLKhJc%2FupU52EiBlYUo2pj8LAV8c1%2Fimg.png" /> */}
     <div className="profile">
-      <div className="profile-name">I'm Chung Hyeonjeong</div>
+      <div className="profile-name">안녕하세요, AI 의료영상 연구원이 되고싶은 정현정입니다.</div>
       <p className="profile-content">
         사람에 대한 이해와 데이터 및 AI를 활용한 문제해결능력이 미래의 세상을 이끌어가는 핵심이라고
         생각합니다. 융합학부 뇌인지과학과에 진학하여 뇌의 활동 기전 및 치매, 파킨슨 등의 완전한

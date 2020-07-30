@@ -1,16 +1,20 @@
 :root {
   --text--color--black: #212121;
-  --text--color--white: #ffffff;
+  --text--color--white: #efefef;
 }
 /* 내가 다 customizing 하기 위해 CSS기본으로 들어가있는 style을 다 제거해주기 .body, */
+body {
+  margin: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
 }
-a {
-  color: inherit;
+/* a {
+  color: var(--text--color--white);
   text-decoration: none;
-}
+} */
 
 /*App style*/
 .contents,
@@ -22,11 +26,17 @@ a {
 .about-Compo {
   display: flex;
 }
+.profile {
+  font-family: 'Nanum Gothic Coding';
+  color: var(--text--color--white);
+}
 .profile-name {
   font-size: 30px;
 }
 
 /* Nav component style */
+.navbar {
+}
 
 .brainSlide {
   background-image: url(https://a360-op.s3.amazonaws.com/wp-content/uploads/2019/11/MRI-Study-1280x640.jpg);
@@ -52,7 +62,7 @@ li {
   list-style-type: none;
 }
 
-.navbar {
+.navlink {
 }
 
 .navtitle {
@@ -62,6 +72,66 @@ li {
   top: 20px;
   left: 20px;
 }
+
+/* Linkbar component style */
+.linkbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c313a;
+}
+.linkbar_menu li {
+  padding: 20px 30px;
+  font-family: 'Montserrat';
+}
+.linkbar_menu li:hover {
+  background-color: #718792;
+  border-radius: 4px;
+}
+/*페이지 크기가 줄어들면 이 메뉴도 세로로 정렬되다가*/
+@media screen and (max-width: 768px) {
+  .linkbar_menu {
+    width: 100%;
+    flex-direction: column;
+  }
+  .linkbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+  /* .linkbar_menu_toggleBtn {
+    display: block;
+  } */
+}
+
+/* 더 작아지면 햄버거 메뉴로 되는 반응형 만들기*/
+/* .linkbar_menu_toggleBtn {
+  /* display: none; */
+/* background-color: #1c313a;
+  position: absolute;
+  right: 32px;
+  font-size: 25px;
+  color: var(--text--color--white);
+} */
+
+.menu {
+  padding: 25px;
+  text-decoration: none;
+  color: var(--text--color--white);
+}
+
+/*content style*/
+.contents {
+  background-color: #455a64;
+}
+
+.about_compo,
+.project_compo,
+.blog_compo {
+  background-color: #455a64;
+}
+
 /*Project component style*/
 .project_compo {
   display: flex;
@@ -73,27 +143,19 @@ li {
   height: 360px;
 }
 
-/* Linkbar component style */
-
-.linkbar_menu {
-  display: flex;
-  background-color: #002171;
-  list-style: none;
-}
-
-.menu {
-  padding: 25px;
-  text-decoration: none;
-  color: var(--text--color--white);
-}
-
 /*Footbar component style*/
 .footbar_logo {
-  list-style: none;
-  color: white;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  list-style: none;
+  text-decoration: none;
+  background-color: #455a64;
 }
 
 .footbar_logo i {
-  padding: 25px;
+  padding: 50px;
+  color: var(--text--color--white);
+  font-size: 35px;
 }

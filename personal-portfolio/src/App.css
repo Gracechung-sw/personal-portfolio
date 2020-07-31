@@ -131,6 +131,7 @@ li {
 .linkbar_menu li {
   padding: 20px 30px;
   font-family: 'Montserrat';
+  font-weight: bold;
 }
 .linkbar_menu li:hover {
   background-color: #718792;
@@ -180,6 +181,40 @@ li {
 
 /*Project component style*/
 .project_compo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-self: center;
+}
+/* .project-header {
+  padding-top: 40px;
+  font-family: 'Montserrat';
+  font-size: 12pt;
+  text-align: center;
+} */
+.projectbar {
+}
+.projectbar-menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #455a64;
+}
+.projectbar-menu li {
+  padding: 50px 40px;
+  font-family: 'Poppins';
+  color: var(--text--color--gray);
+}
+.projectbar-menu li:hover {
+  color: #1c313a;
+  border-radius: 4px;
+}
+
+.projectcontent {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

@@ -81,27 +81,102 @@ ul {
 }
 
 /* Nav component style */
-.navbar {
+
+/*좌우버튼*/
+#prev,
+#next {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+  display: inline-block;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+#prev.disabled,
+#next.disabled {
+  display: none;
+}
+
+#prev {
+  background-image: url('https://www.opalfestival.com.au/wp-content/plugins/photo-gallery/css/bwg-fonts/fonts/bwg-fonts-svg/angle-left.svg');
+  margin-left: -480px;
+}
+#prev:hover {
+  background-image: url('https://www.opalfestival.com.au/wp-content/plugins/photo-gallery/css/bwg-fonts/fonts/bwg-fonts-svg/angle-left.svg');
+}
+#next {
+  background-image: url('https://www.opalfestival.com.au/wp-content/plugins/photo-gallery/css/bwg-fonts/fonts/bwg-fonts-svg/angle-right.svg');
+  margin-left: 380px;
+}
+#next:hover {
+  background-image: url('https://www.opalfestival.com.au/wp-content/plugins/photo-gallery/css/bwg-fonts/fonts/bwg-fonts-svg/angle-right.svg');
 }
 
 .brainSlide {
-  background-image: url(https://a360-op.s3.amazonaws.com/wp-content/uploads/2019/11/MRI-Study-1280x640.jpg);
+  background-image: url('https://www.neura.edu.au/wp-content/uploads/2017/04/IGP-1024x774.jpg');
   /* 이미지의 비율이 유지되었으면 좋겠을 때 아래처럼 비율로 해당 페이지에서 항상 이 이미지의 크기(비율)가 유지될 수 있도록 */
   background-size: cover;
   background-position: center;
-  padding-top: 56.25%;
+  padding-top: 30%;
+  background-size: cover;
+}
+.brainSlide .introduction {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: 'Questrial';
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--text--color--white);
+  z-index: 2;
+  text-align: center;
 }
 .programmingSlide {
-  background-image: url(https://www.jayacompany.com/wp-content/uploads/2019/11/woman-programming.png);
+  background-image: url('https://www.jayacompany.com/wp-content/uploads/2019/11/woman-programming.png');
   background-size: cover;
   background-position: center;
-  padding-top: 56.25%;
+  padding-top: 30%;
+}
+.programmingSlide .introduction {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: 'Questrial';
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--text--color--white);
+  z-index: 2;
+  text-align: center;
 }
 .dataSlide {
-  background-image: url(https://cdn-images-1.medium.com/max/2600/1*JGsnzMjAjs0E7uVyKcOFNA.jpeg);
+  background-image: url('https://cdn-images-1.medium.com/max/2600/1*JGsnzMjAjs0E7uVyKcOFNA.jpeg');
   background-size: cover;
   background-position: center;
-  padding-top: 56.25%;
+  padding-top: 30%;
+}
+.dataSlide .introduction {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: 'Questrial';
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--text--color--white);
+  z-index: 2;
+  text-align: center;
 }
 
 li {
@@ -150,6 +225,9 @@ li {
   /* .linkbar_menu_toggleBtn {
     display: block;
   } */
+  .brainSlide .introduction {
+    display: none;
+  }
 }
 
 /* 더 작아지면 햄버거 메뉴로 되는 반응형 만들기*/
@@ -218,10 +296,13 @@ li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 20px 50px;
+  align-items: center;
 }
 .project-image {
-  width: 350px;
-  height: 360px;
+  position: relative;
+  width: 300px;
+  height: 310px;
 }
 
 /*Footbar component style*/

@@ -1,6 +1,7 @@
 :root {
   --text--color--black: #212121;
   --text--color--white: #efefef;
+  --text--color--gray: #bcbcbc;
 }
 /* 내가 다 customizing 하기 위해 CSS기본으로 들어가있는 style을 다 제거해주기 .body, */
 body {
@@ -27,11 +28,56 @@ ul {
   display: flex;
 }
 .profile {
+  display: flex;
   font-family: 'Nanum Gothic Coding';
   color: var(--text--color--white);
 }
+.profile-image {
+  width: 15%;
+  height: 15%;
+  padding: 8px 12px;
+}
+.profile-desc {
+  padding: 8px 12px;
+}
 .profile-name {
   font-size: 30px;
+  padding: 8px 12px;
+}
+.skill_compo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 30px 0px;
+}
+.each-skill {
+  text-align: center;
+  align-items: center;
+}
+.skill-image {
+  justify-content: space-evenly;
+  list-style: none;
+  text-decoration: none;
+  background-color: #455a64;
+}
+.skill-image i {
+  padding: 25px;
+  color: var(--text--color--white);
+  font-size: 40px;
+}
+.skill-item-field {
+  font-family: 'montserrat';
+  font-weight: bold;
+  color: var(--text--color--white);
+  padding: 8px 12px;
+}
+.skill-item-skills {
+  font-family: 'raleway';
+  color: var(--text--color--gray);
+  justify-content: space-between;
+}
+.skill-item-skills li {
+  padding-top: 3px;
 }
 
 /* Nav component style */

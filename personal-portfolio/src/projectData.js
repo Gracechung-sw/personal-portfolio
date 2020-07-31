@@ -5,6 +5,7 @@ export const projectData = [
       projectId: '000001',
     },
     snippet: {
+      field: 'DeepLearning',
       title: 'Cat vs Dog Classification',
       description: 'Convolutional Neural Network: Cat-Dog Classification',
       thumbnails: {
@@ -21,6 +22,7 @@ export const projectData = [
       projectId: '000002',
     },
     snippet: {
+      field: 'DeepLearning',
       title: 'Arm bone Normal vs Fracture Classification',
       description: 'AI-based Diagnostic Software for Frature Abnormalities in Arm born X-ray',
       thumbnails: {
@@ -38,6 +40,7 @@ export const projectData = [
       projectId: '000003',
     },
     snippet: {
+      field: 'FrontEnd',
       title: 'Code States opens extension school on Mars',
       description: 'Watch the ribbon cutting of the first coding bootcamp in space',
       thumbnails: {
@@ -52,6 +55,7 @@ export const projectData = [
       projectId: '000004',
     },
     snippet: {
+      field: 'BackEnd',
       title: 'JavaScript Jamz',
       description: "Rock on with JavaScript remixes of today's top songs",
       thumbnails: {
@@ -67,6 +71,7 @@ export const projectData = [
       projectId: '000005',
     },
     snippet: {
+      field: 'BrainCognitive',
       title: 'Framework fatigue and you',
       description:
         'JS guru, @McKringleberry teaches tips and tricks for managing JS framework fatigue',

@@ -9,6 +9,7 @@ class Project extends React.Component {
     }
     // console.log('projectData:', projectData)
     // console.log('currProjects: ', this.state.currProjects)
+    this.desc = ''
   }
 
   onSelectProjects(fieldName) {
@@ -39,7 +40,6 @@ class Project extends React.Component {
             <li
               className="All"
               onClick={(e) => {
-                // console.log(e.target.className)
                 this.onSelectProjects(e.target.className)
               }}
             >
@@ -48,7 +48,6 @@ class Project extends React.Component {
             <li
               className="DeepLearning"
               onClick={(e) => {
-                // console.log(e.target.className)
                 this.onSelectProjects(e.target.className)
               }}
             >
@@ -57,7 +56,6 @@ class Project extends React.Component {
             <li
               className="FrontEnd"
               onClick={(e) => {
-                // console.log(e.target.className)
                 this.onSelectProjects(e.target.className)
               }}
             >
@@ -66,7 +64,6 @@ class Project extends React.Component {
             <li
               className="BackEnd"
               onClick={(e) => {
-                // console.log(e.target.className)
                 this.onSelectProjects(e.target.className)
               }}
             >
@@ -75,7 +72,6 @@ class Project extends React.Component {
             <li
               className="BrainCognitive"
               onClick={(e) => {
-                // console.log(e.target.className)
                 this.onSelectProjects('BrainCognitive')
               }}
             >
@@ -86,12 +82,27 @@ class Project extends React.Component {
         <nav className="projectcontent">
           {this.state.currProjects.map((project) => (
             <div className="each-project">
-              <img className="project-image" src={project.snippet.thumbnails.default.url} onClick />
+              {/* <img className="project-image" src={project.snippet.thumbnails.default.url}></img> */}
+              <a
+                className="project-image"
+                style={{
+                  backgroundImage: 'url(' + project.snippet.thumbnails.default.url + ')',
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat',
+                }}
+                href={project.snippet.thumbnails.default.post}
+                target="_blank"
+              ></a>
               <div className="project-item">
                 <div className="project-item-title">{project.snippet.title}</div>
                 <div className="project-item-desc">{project.snippet.description}</div>
               </div>
-              <a href={project.snippet.thumbnails.default.post} target="_new"></a>
+              {/* <a
+                className="project-page"
+                href={project.snippet.thumbnails.default.post}
+                target="_new"
+              ></a> */}
             </div>
           ))}
         </nav>

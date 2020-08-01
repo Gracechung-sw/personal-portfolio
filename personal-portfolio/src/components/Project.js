@@ -37,46 +37,59 @@ class Project extends React.Component {
         {/* <h3 className="Project-header">PROJECT</h3> */}
         <nav className="projectbar">
           <ul className="projectbar-menu">
-            <li
-              className="All"
+            <ul className="projectbar-menu-list">
+              <li
+                className="All"
+                onClick={(e) => {
+                  this.onSelectProjects(e.target.className)
+                }}
+              >
+                All
+              </li>
+              <li
+                className="DeepLearning"
+                onClick={(e) => {
+                  this.onSelectProjects(e.target.className)
+                }}
+              >
+                Deep Learning
+              </li>
+              <li
+                className="FrontEnd"
+                onClick={(e) => {
+                  this.onSelectProjects(e.target.className)
+                }}
+              >
+                Front-end
+              </li>
+              <li
+                className="BackEnd"
+                onClick={(e) => {
+                  this.onSelectProjects(e.target.className)
+                }}
+              >
+                Back-end
+              </li>
+              <li
+                className="BrainCognitive"
+                onClick={(e) => {
+                  this.onSelectProjects('BrainCognitive')
+                }}
+              >
+                Brain-Cognitive Science
+              </li>
+            </ul>
+
+            <a
+              href="#"
+              className="project-hamburger"
               onClick={(e) => {
-                this.onSelectProjects(e.target.className)
+                const menu = document.querySelector('.projectbar-menu-list')
+                menu.classList.toggle('active')
               }}
             >
-              All
-            </li>
-            <li
-              className="DeepLearning"
-              onClick={(e) => {
-                this.onSelectProjects(e.target.className)
-              }}
-            >
-              Deep Learning
-            </li>
-            <li
-              className="FrontEnd"
-              onClick={(e) => {
-                this.onSelectProjects(e.target.className)
-              }}
-            >
-              Front-end
-            </li>
-            <li
-              className="BackEnd"
-              onClick={(e) => {
-                this.onSelectProjects(e.target.className)
-              }}
-            >
-              Back-end
-            </li>
-            <li
-              className="BrainCognitive"
-              onClick={(e) => {
-                this.onSelectProjects('BrainCognitive')
-              }}
-            >
-              Brain-Cognitive Science
-            </li>
+              <i class="fas fa-bars"></i>
+            </a>
           </ul>
         </nav>
         <nav className="projectcontent">

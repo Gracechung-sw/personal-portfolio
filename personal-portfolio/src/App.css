@@ -212,33 +212,6 @@ li {
   background-color: #718792;
   border-radius: 4px;
 }
-/*페이지 크기가 줄어들면 이 메뉴도 세로로 정렬되다가*/
-@media screen and (max-width: 768px) {
-  .linkbar_menu {
-    width: 100%;
-    flex-direction: column;
-  }
-  .linkbar_menu li {
-    width: 100%;
-    text-align: center;
-  }
-  /* .linkbar_menu_toggleBtn {
-    display: block;
-  } */
-  .brainSlide .introduction {
-    display: none;
-  }
-}
-
-/* 더 작아지면 햄버거 메뉴로 되는 반응형 만들기*/
-/* .linkbar_menu_toggleBtn {
-  /* display: none; */
-/* background-color: #1c313a;
-  position: absolute;
-  right: 32px;
-  font-size: 25px;
-  color: var(--text--color--white);
-} */
 
 .menu {
   padding: 25px;
@@ -273,7 +246,7 @@ li {
 } */
 .projectbar {
 }
-.projectbar-menu {
+.projectbar-menu-list {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -290,6 +263,13 @@ li {
 .projectbar-menu li:hover {
   color: #1c313a;
   border-radius: 4px;
+}
+.project-hamburger {
+  display: none;
+  right: 55px;
+  font-size: 20px;
+  color: var(--text--color--gray);
+  padding: 50px 0px;
 }
 
 .projectcontent {
@@ -369,3 +349,41 @@ li {
   color: var(--text--color--white);
   font-size: 35px;
 }
+
+/*페이지 크기가 줄어들면 이 메뉴도 세로로 정렬되다가*/
+@media screen and (max-width: 768px) {
+  .linkbar_menu {
+    width: 100%;
+    flex-direction: column;
+  }
+  .linkbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+  /* .linkbar_menu_toggleBtn {
+    display: block;
+  } */
+  .brainSlide .introduction {
+    display: none;
+  }
+  .project-hamburger {
+    display: block;
+  }
+  .projectbar-menu li {
+    display: none;
+  }
+
+  projectbar-menu-list.active {
+    display: flex;
+  }
+}
+
+/* 더 작아지면 햄버거 메뉴로 되는 반응형 만들기*/
+/* .linkbar_menu_toggleBtn {
+  /* display: none; */
+/* background-color: #1c313a;
+  position: absolute;
+  right: 32px;
+  font-size: 25px;
+  color: var(--text--color--white);
+} */
